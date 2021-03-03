@@ -23,3 +23,7 @@ npm run start
 ```
 
 Connect to `localhost:3000` to see the demo.
+
+## Learn More
+
+To learn more about AssemblyScript, you can visit the official site [here](https://www.assemblyscript.org/introduction.html)

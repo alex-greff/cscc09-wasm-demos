@@ -28,3 +28,9 @@ you can run the following command.
 ```
 docker exec demo-c bash build.sh
 ```
+
+## Learn More
+
+To learn more about compiling C/C++ with Emscripten, check out their
+[getting started](https://emscripten.org/docs/getting_started/index.html)
+section.
