@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  demo-c:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: demo-c
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app

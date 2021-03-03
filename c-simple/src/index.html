@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emscripten Simple</title>
+</head>
+<body>
+  <h1>Emscripten Simple Demo...</h1>
+
+  <h2>Sum</h2>
+  <form id="sum-example">
+    <input type="number" name="sum-a" id="sum-a" value="0">
+    +
+    <input type="number" name="sum-b" id="sum-b" value="0">
+    =
+    <span id="sum-result">0</span>
+    <button id="sum-submit" type="submit">Add!</button>
+  </form>
+
+  <!-- We load the glue code here. This handles everything including
+  instantiating the WASM module -->
+  <script src="./build/demo.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
