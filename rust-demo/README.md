@@ -1,6 +1,6 @@
 # Emscripten C Simple Demo
 
-This is a demo showing how to compile Rust to WebAssembly using the wasm-bindgen
+This is a demo showing how to compile Rust to WebAssembly using wasm-pack
 
 ## Prerequisites
 
