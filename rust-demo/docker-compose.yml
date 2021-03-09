@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  rust-wasm-demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rust-wasm-demo
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
