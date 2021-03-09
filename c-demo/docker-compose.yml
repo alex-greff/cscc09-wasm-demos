@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  demo-c:
+  c-wasm-demo:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: demo-c
+    container_name: c-wasm-demo
     ports:
       - "3000:3000"
     volumes:

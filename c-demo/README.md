@@ -22,11 +22,11 @@ Connect to `localhost:3000` to see the demo.
 
 ## Rebuild the WebAssembly
 
-If you want to rebuild the WebAssembly without restarting the Docker containers
+If you want to rebuild the WebAssembly without restarting the Docker container
 you can run the following command.
 
 ```
-docker exec demo-c bash build.sh
+docker exec c-wasm-demo bash build.sh
 ```
 
 ## Learn More

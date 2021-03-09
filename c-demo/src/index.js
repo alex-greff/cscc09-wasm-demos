@@ -1,6 +1,6 @@
 (() => {
   window.onload = async () => {
-    // // You can check out what the module looks with the following
+    // You can check out what the module looks with the following
     console.log("Module", Module);
 
     // --- Sum Example ---
