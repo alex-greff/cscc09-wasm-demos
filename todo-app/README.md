@@ -1,9 +1,7 @@
 # Todo App
-
-This is a more advanced demo where the class todo app is rewritten so that
-the API module is written C++. This example shows more advanced features of 
-Emscripten such as building bindings and managing JavaScript callback functions
-within C++.
+This is a more advanced demo that recreates the todo app example with the API
+module written in C++. This example shows more advanced features of Emscripten
+such as making bindings and managing JavaScript callback functions within C++.
 
 ## Prerequisites
 
@@ -35,23 +33,24 @@ docker exec c-wasm-demo bash build.sh
 
 ## Development Environment
 
-If you open up the C++ files you probably find that you will get a bunch of
-highlighted errors. This is before your IDE does not know where to locate
-the emscripten header files since they're actually within the Docker container. 
+If you open up the C++ files you will probably find that you will get a bunch of
+highlighted errors. This is because your IDE does not know where to locate
+the emscripten header files since they're actually in the Docker container. 
 
 For convenience I've setup a dev-container configuration for VS Code. This 
-allows you to essentially open up VS Code within the Docker container.
+allows you to essentially open up VS Code within the Docker container and will
+allow you to have proper intellisense for the C++ files.
 
 To open the dev environment you need the following VS Code extension: 
 [https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-Next make sure the Docker environment is running
+Next make sure the Docker environment is running:
 
 ```
 docker-compose up --build
 ```
 
-Then open the `todo-app` folder in VS Code, then press `CTRL + P` and start
+Then open the `todo-app` folder in VS Code, press `CTRL + P` and start
 typing and select `Remote-Containers: Reopen in Container`. VS Code will now
 reopen within the Docker container.
 
