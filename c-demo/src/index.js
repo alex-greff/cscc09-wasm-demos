@@ -1,5 +1,13 @@
 (() => {
+  // A promise that resolves when the wasm module instantiates
+  const moduleLoaded = new Promise((accept) => {
+      Module.onRuntimeInitialized = () => accept();
+  });
+
   window.onload = async () => {
+    // Ensure the wasm module has loaded
+    await moduleLoaded;
+
     // You can check out what the module looks with the following
     console.log("Module", Module);
 
