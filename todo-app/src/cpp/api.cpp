@@ -8,8 +8,8 @@ using namespace emscripten;
 EMSCRIPTEN_BINDINGS(my_module)
 {
   // Bind the TodoAppAPI class so we can interact with it in JavaScript
-	class_<TodoAppAPI>("TodoAppAPI")
-	.constructor()
+  class_<TodoAppAPI>("TodoAppAPI")
+  .constructor()
   .function("onItemUpdate", &TodoAppAPI::onItemUpdate)
   .function("addItem", &TodoAppAPI::addItem)
   .function("deleteItem", &TodoAppAPI::deleteItem);
