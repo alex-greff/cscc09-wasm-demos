@@ -34,3 +34,30 @@ docker exec c-wasm-demo bash build.sh
 To learn more about compiling C/C++ with Emscripten, check out their
 [getting started](https://emscripten.org/docs/getting_started/index.html)
 section.
+
+## Development Environment
+
+If you open up the C++ files you will probably find that you will get a bunch of
+highlighted errors. This is because your IDE does not know where to locate
+the emscripten header files since they're actually in the Docker container. 
+
+For convenience I've setup a dev-container configuration for VS Code. This 
+allows you to essentially open up VS Code within the Docker container and will
+allow you to have proper intellisense for the C++ files.
+
+To open the dev environment you need the following VS Code extension: 
+[https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+Next make sure the Docker environment is running:
+
+```
+docker-compose up --build
+```
+
+Then open the `todo-app` folder in VS Code, press `CTRL + P` and start
+typing and select `Remote-Containers: Reopen in Container`. VS Code will now
+reopen within the Docker container.
+
+If you are interested in learning more about VS Code dev containers (which
+I highly recommend) you can start by reading the documentation on it 
+[here](https://code.visualstudio.com/docs/remote/containers).
