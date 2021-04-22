@@ -7,7 +7,7 @@ This is a demo showing basic usage of WebAssembly using AssemblyScript.
 Install development package dependencies.
 
 ```
-npm run install
+npm install
 ```
 
 Build the WebAssembly.
